@@ -1,0 +1,9 @@
+import easygui
+player_name = easygui.enterbox("Hi! What is your name?")
+print (player_name)
+easygui.msgbox ("Hi "+ player_name +"!")
+age = 15
+player_age = int(easygui.enterbox("How old are you?"))
+if player_age <=18 and player_age >=15:
+    easygui.msgbox ("You're the right age.") 
+    easygui.msgbox ("Welcome to the Rapper Quiz!")
