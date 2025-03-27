@@ -1,9 +1,21 @@
 import easygui
 player_name = easygui.enterbox("Hi! What is your name?")
 print (player_name)
-easygui.msgbox ("Hi "+ player_name +"!")
-age = 15
+player_score = 0
 player_age = int(easygui.enterbox("How old are you?"))
 if player_age <=18 and player_age >=15:
-    easygui.msgbox ("You're the right age.") 
-    easygui.msgbox ("Welcome to the Rapper Quiz!")
+    easygui.msgbox ("You're the right age.")
+    easygui.msgbox ( player_name + " Welcome to the Rapper Quiz! ")
+
+    easygui.msgbox ("This quiz is about Rappers.")
+    easygui.msgbox ("You will answer the questions and see if you got them right.")
+    easygui.msgbox ("At the end of the quiz you will see how many points you have earned.")
+    easygui.msgbox (" Right now you have " + str(player_score) + " points")
+    easygui.msgbox ("Let's Start!")
+    easygui.choicebox("Which rapper has been in the rap industry the longest?",choices = ["Eminem","Drake","Kendrick","Kanye"])
+answer = easygui.choicebox
+if answer == "Eminem"
+easygui.msgbox ("Great job you got it right") 
+
+if player_age >=18 and player_age <=15: 
+    easygui.msgbox ("You are not old enough.")
