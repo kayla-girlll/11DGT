@@ -1,53 +1,63 @@
 import easygui
+player_score = 0
+# These are the options and answers for my questions 
+Q_1 = ["Eminem","Drake","Kendrick","Kanye"]
+Q_2 = ["Kendrick","Drake","Kanye","Eminem"]
+Q_3 = ["Drake","Kanye","Eminem","Kendrick"]
+Q_4 = ["Humble","Luther","Not like us","Peekaboo"]
+Q_5 = ["Kanye","Kendrick","Drake","Eminem"]
+Q_6 = ["Kendrick","Drake","Eminem","Kanye"]
+# This asks for your name and asking your age before the quiz starts
 player_name = easygui.enterbox("Hi! What is your name?")
 print (player_name)
-player_score = 0
 player_age = int(easygui.enterbox("How old are you?"))
+# This is to make sure the player is the right age to play the game
 if player_age <=18 and player_age >=15:
     easygui.msgbox ("You're the right age.")
     easygui.msgbox ( str (player_name) + " Welcome to the Rapper Quiz! ")
-
+# This is just explaing the quiz for the player to understand 
     easygui.msgbox ("This quiz is about Rappers.")
     easygui.msgbox ("You will answer the questions and see if you got them right.")
     easygui.msgbox ("At the end of the quiz you will see how many points you have earned.")
     easygui.msgbox (" Right now you have " + str(player_score) + " points")
     easygui.msgbox ("Let's Start!")
-    answer = easygui.choicebox("1. Which rapper has been in the rap industry the longest?",choices = ["Eminem","Drake","Kendrick","Kanye"] )
+# This is my 6 questions about rappers and everytime they get the question right they will get points 
+    answer = easygui.choicebox("1. Which rapper has been in the rap industry the longest?", choices = Q_1 )
 if answer == "Eminem":
     easygui.msgbox ("Great job you got it right!! Eminem made his debut in 1996") 
     player_score += 5
 else:
     easygui.msgbox("Try again next time")
     
-answer = easygui.choicebox("2. Who is the rapper with the biggest net worth of $400 million?",choices = ["Kendrick","Drake","Kanye","Eminem"] )
+answer = easygui.choicebox("2. Who is the rapper with the biggest net worth of $400 million?",choices = Q_2 )
 if answer == "Kanye":
     easygui.msgbox ("That is right!!")
     player_score += 5
 else:
-    easygui.mgsbox ("Sorry you got it wrong")
+    easygui.msgbox ("Sorry you got it wrong")
 
-answer = easygui.choicebox("3. There is one rapper who has not collaborated with Sza?",choices = ["Drake","Kanye","Eminem","Kendrick"])
+answer = easygui.choicebox("3. There is one rapper who has not collaborated with Sza?",choices = Q_3)
 if answer == "Eminem":
     easygui.msgbox("Good job")
     player_score += 5
 else:
     easygui.msgbox("That is wrong")
 
-answer = easygui.choicebox("4. What was Kendricks latest big hit?", choices = ["Humble","Luther","Not like us","Peekaboo"])
+answer = easygui.choicebox("4. What was Kendricks latest big hit?", choices = Q_4)
 if answer == "Not like us":
     easygui.msgbox ("Thats correct!")
     player_score += 5
 else:
     easygui.msgbox("Sorry it is wrong")
 
-answer = easygui.choicebox("5. Who is the most feared Rapper in the industry?", choices = ["Kanye West","Kendrick Lamar","Drake","Eminem"])
+answer = easygui.choicebox("5. Who is the most feared Rapper in the industry?", choices = Q_5)
 if answer == "Eminem":
     easygui.msgbox ("You got it!")
     player_score += 5
 else:
     easygui.msgbox("Sorry it is wrong")
 
-answer = easygui.choicebox("6. Who sings One Dance?", choices = ["Kendrick","Drake","Eminem","Kanye"])
+answer = easygui.choicebox("6. Who sings One Dance?", choices = Q_6)
 if answer == "Drake":
     easygui.msgbox ("Thats right!")
     player_score += 5
@@ -56,6 +66,7 @@ else:
 easygui.msgbox("You have completed the quiz!")
 easygui.msgbox(" Your final score is " + str(player_score) + " points. Good job! ")
 easygui.msgbox("Thanks for playing my Quiz")
-
+# This is showing how much points you have got all together for the quiz and saying thanks
 if player_age >=18 and player_age <=15: 
     easygui.msgbox ("You are not old enough.")
+# If the player is younger than 15 or older than 18 they will be able to play the quiz 
