@@ -23,91 +23,97 @@ if player_age <=18 and player_age >=15:
     easygui.msgbox (" Right now you have " + str(player_score) + " points")
     easygui.msgbox ("Let's Start!")
 # This is my 6 questions about rappers and everytime they get the question right they will get points 
-answer = easygui.choicebox("1. Which rapper has been in the rap industry the longest?", choices = Q_1 )
-if answer == "Eminem":
-   easygui.msgbox ("Great job you got it right!! Eminem made his debut in 1996") 
-   player_score += 5 
-while answer != "Eminem" and counter <2:
-    easygui.msgbox("Sorry you got it wrong try again")
-    counter += 2 
     answer = easygui.choicebox("1. Which rapper has been in the rap industry the longest?", choices = Q_1 )
+    counter = 0
     if answer == "Eminem":
-        easygui.msgbox(" Great job! You got it")
-        player_score += 1.5
-    else:
-        easygui.msgbox("Try again next time")
-counter = 1
-answer = easygui.choicebox("2. Who is the rapper with the biggest net worth of $400 million?",choices = Q_2 )
-if answer == "Kanye":
-    easygui.msgbox ("That is right!")
-    player_score += 5
-while answer != "Kanye" and counter <2:
-    easygui.msgbox("Sorry that's wrong try again")
-    counter +=2
+        easygui.msgbox ("Great job you got it right!! Eminem made his debut in 1996") 
+        player_score += 5 
+    while answer != "Eminem" and counter <2:
+          easygui.msgbox("Sorry you got it wrong try again")
+          counter += 2 
+          answer = easygui.choicebox("1. Which rapper has been in the rap industry the longest?", choices = Q_1 )
+          if answer == "Eminem":
+             easygui.msgbox(" Great job! You got it")
+             player_score += 1.5
+          else:
+             easygui.msgbox("Try again next time")
+             counter = 1
     answer = easygui.choicebox("2. Who is the rapper with the biggest net worth of $400 million?",choices = Q_2 )
+    counter = 0
     if answer == "Kanye":
-        easygui.msgbox ("That is right!!")
-        player_score += 1.5 
-    else:
-        easygui.msgbox ("Sorry you got it wrong")
-counter = 1 
-answer = easygui.choicebox("3. There is one rapper who has not collaborated with Sza?",choices = Q_3)
-if answer == "Eminem":
-    easygui.msgbox("Good job")
-    player_score += 5
-while answer != "Eminem" and counter <2:
-    easygui.msgbox("Sorry that's wrong try again")
-    counter +=2
+       easygui.msgbox ("That is right!")
+       player_score += 5
+    while answer != "Kanye" and counter <2:
+          easygui.msgbox("Sorry that's wrong try again")
+          counter +=2
+          answer = easygui.choicebox("2. Who is the rapper with the biggest net worth of $400 million?",choices = Q_2 )
+          if answer == "Kanye":
+             easygui.msgbox ("That is right!!")
+             player_score += 1.5 
+          else:
+             easygui.msgbox ("Sorry you got it wrong")
+             counter = 1 
     answer = easygui.choicebox("3. There is one rapper who has not collaborated with Sza?",choices = Q_3)
+    counter = 0
     if answer == "Eminem":
-        easygui.msgbox ("That's right!")
-        player_score += 1.5
-    else:
-        easygui.msgbox("That is wrong")
-counter = 1 
-answer = easygui.choicebox("4. What was Kendricks latest big hit?", choices = Q_4)
-if answer == "Not like us":
-    easygui.msgbox ("Thats correct!")
-    player_score += 5
-while answer != "Not like us" and counter <2:
-    easygui.msgbox("Try again")
-    counter +=2
+       easygui.msgbox("Good job")
+       player_score += 5
+    while answer != "Eminem" and counter <2:
+          easygui.msgbox("Sorry that's wrong try again")
+          counter +=2
+          answer = easygui.choicebox("3. There is one rapper who has not collaborated with Sza?",choices = Q_3)
+          if answer == "Eminem":
+             easygui.msgbox ("That's right!")
+             player_score += 1.5
+          else:
+             easygui.msgbox("That is wrong")
+             counter = 1 
     answer = easygui.choicebox("4. What was Kendricks latest big hit?", choices = Q_4)
+    counter = 0
     if answer == "Not like us":
-        easygui.msgbox("That's correct")
-        player_score += 1.5 
-    else:
-        easygui.msgbox("Sorry it is wrong")
-counter = 1
-answer = easygui.choicebox("5. Who is the most feared Rapper in the industry?", choices = Q_5)
-if answer == "Eminem":
-    easygui.msgbox ("You got it!")
-    player_score += 5
-while answer != "Eminem" and counter <2:
-    easygui.msgbox("Try again")
-    counter +=2 
+       easygui.msgbox ("Thats correct!")
+       player_score += 5
+    while answer != "Not like us" and counter <2:
+          easygui.msgbox("Try again")
+          counter +=2
+          answer = easygui.choicebox("4. What was Kendricks latest big hit?", choices = Q_4)
+          if answer == "Not like us":
+             easygui.msgbox("That's correct")
+             player_score += 1.5 
+          else:
+             easygui.msgbox("Sorry it is wrong")
+             counter = 1
     answer = easygui.choicebox("5. Who is the most feared Rapper in the industry?", choices = Q_5)
+    counter = 0
     if answer == "Eminem":
-        player_score += 1.5
-    else:
-        easygui.msgbox("Sorry it is wrong")
-counter =1 
-answer = easygui.choicebox("6. Who sings One Dance?", choices = Q_6)
-if answer == "Drake":
-    easygui.msgbox ("Thats right!")
-    player_score += 5
-while answer != "Drake" and counter <2:
-    easygui.msgbox("Try again")
-    counter +=2
+       easygui.msgbox ("You got it!")
+       player_score += 5
+    while answer != "Eminem" and counter <2:
+          easygui.msgbox("Try again")
+          counter +=2 
+          answer = easygui.choicebox("5. Who is the most feared Rapper in the industry?", choices = Q_5)
+          if answer == "Eminem":
+             player_score += 1.5
+          else:
+             easygui.msgbox("Sorry it is wrong")
+             counter =1 
     answer = easygui.choicebox("6. Who sings One Dance?", choices = Q_6)
+    counter = 0
     if answer == "Drake":
-        player_score += 1.5 
-    else:
-        easygui.msgbox("Better luck next time")
-easygui.msgbox("You have completed the quiz!")
-easygui.msgbox(" Your final score is " + str(player_score) + " points. Good job! ")
-easygui.msgbox("Thanks for playing my Quiz")
+       easygui.msgbox ("Thats right!")
+       player_score += 5
+    while answer != "Drake" and counter <2:
+          easygui.msgbox("Try again")
+          counter +=2
+          answer = easygui.choicebox("6. Who sings One Dance?", choices = Q_6)
+          if answer == "Drake":
+             player_score += 1.5 
+          else:
+             easygui.msgbox("Better luck next time")
+    easygui.msgbox("You have completed the quiz!")
+    easygui.msgbox(" Your final score is " + str(player_score) + " points. Good job! ")
+    easygui.msgbox("Thanks for playing my Quiz")
 # This is showing how much points you have got all together for the quiz and saying thanks
-if player_age >=18 and player_age <=15: 
+if player_age >18 or player_age <15: 
     easygui.msgbox ("You are not old enough.")
 # If the player is younger than 15 or older than 18 they will be able to play the quiz 
