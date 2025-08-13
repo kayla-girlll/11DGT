@@ -1,0 +1,294 @@
+/*This is making my background purple and how it is presented*/
+body{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color:#000000;
+    font-family:'Arial',sans-serif;
+    background-color:#cca1f3;
+}
+/*This is the box on the website making the color lavender and how big it is*/
+main{
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #efdcf9;
+}  
+/*this makes sure my images on the information page are the right size*/
+main img{
+    width:auto;
+}
+/*This is moving the name of the person on the celebrity page to the right and font and how big needs to be*/
+h2{
+   font-size: 60px;
+   font-family:"Nunito San","san-serif";
+   color:#000000;
+   margin:0px;
+   padding-left: 1250px;
+   padding-top: 250px;
+}
+/*This is making the names on 'info' page bigger as it needs to be and centered*/
+h3{
+    font-size: 60px;
+    font-family:"Nunito San","san-serif" ;
+    color: #020202;
+    margin:0px;
+    padding: 20px;
+     
+}
+/*On the 'home' page the title/caption size and font of the text*/
+h4{
+    font-size: 60px;
+    font-family:'cursive' ;
+    color:#ffffff;
+    margin:0px;
+   padding-left: 0px;
+   padding-top: 180px;
+}
+/*Also on the 'home' page making the text different font and sizing it to bigger to make look like question/comment*/
+h5{
+    font-size: 35px;
+    font-style: italic;
+    color: #708686;
+    margin:0px;
+    padding: 10px;
+}
+/*This is the colour and size of the names of the celebrities*/
+h6{
+      font-size: 60px;
+        color:#4f226d;
+        margin:0px;
+       font-family:"Nunito San","san-serif" ;
+}
+/*This is the colour of the 'more' link and where it is located*/
+a{
+    color:#272727;
+    padding-left:0%;
+}
+/*This is the colour of the main text/sentences on the website*/
+body{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color:#000000;
+    text-align: center;
+}
+/*This is the colour of the header on the website*/
+nav{
+    background-color: #896fbc;
+    text-align: center;
+    
+}
+/*Styling navigation links to look like buttons.*/
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 120px;
+    padding: 70px 0px;
+    color:#ffffff;
+    font-weight: bold;
+    
+}
+/*If hovering over the heading text makes different colour look like buttons*/
+nav a:hover{
+    color:rgb(95, 18, 167);
+    background-color: rgb(231, 87, 207);
+}
+/*Coloring the bottom background with the credits*/
+footer{
+    display:block;
+    padding-top:10px;
+    padding-bottom:20px;
+    background-color:#896fbc;
+}
+/*Sizing the front page image and border around it*/
+#hero_image{
+    background-image: url("Front IMG.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 80px ;
+    border: solid 10px #896fbc;
+}
+/*Makes a gap between the footer texts*/
+.rule_below{
+    padding-bottom: 10px;
+    border-bottom: #efdcf9 1px solid;
+}
+/*Is the colour of my heading texts/pages like 'Home, Celebrities' etc*/
+nav a, nav a:hover, #overlay, .get-involved-button{
+    color:#ffffff;
+}
+/*The logo size and where its placed in the corner of my website*/
+#logo{
+    width: 330px;
+    float: left;
+    padding-left: 3%;
+}
+/*Sizing and moving the image to the left with a border around*/
+#Kai{
+    background-image: url("Kai Cenat.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    height: 540px;
+    width:1000px;
+    border: solid 10px #896fbc;
+}
+/*making sure the image is the same size as all the other images*/
+#JB{
+    background-image: url("JB 1.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-left: 2%;
+    height: 540px;
+    width: 1000px;
+    border: solid 10px #896fbc;
+}
+/*This put my image floating to the left like the other images*/
+#HS{
+    background-image: url("H & S.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-left: 2%;
+    height: 540px;
+    width: 1000px;
+    border: solid 10px #896fbc;
+}
+/*Sizing and moving the image to the left with a border around*/
+#VJennie{
+    background-image: url("V&Jennie.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-left: 2%;
+    height: 540px;
+    width: 1000px;
+    border: solid 10px #896fbc;
+}
+/**/
+#Piper{
+    background-image: url("Piper 2.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-left: 2%;
+    height: 540px;
+    width:1000px;
+    border: solid 10px #896fbc;
+}
+/*This put my image floating to the left like the other images*/
+#KIOF{
+    background-image: url("KIOF.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-left: 2%;
+    height: 540px;
+    width:1000px;
+    border: solid 10px #896fbc;
+}
+/*This put my image on the 'more' page in the middle sizing it right and border around it*/
+#KaiC{
+    background-image: url("KaiCenat2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*This is the texts on the pages and where it should be centered*/
+p {
+    display: block;
+    padding:0 25%;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+/*This put my image in the middle like the other images*/
+#JHB{
+    background-image: url("JB2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*Sizing it right and having the image centered */
+#HS2{
+    background-image: url("H&S4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*Centering the image in the middle and making it same size aswell as bordering it*/
+#VJennie2{
+    background-image: url("Jennie&V.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*Sizing it right and having the image centered  and putting border around*/
+#PP{
+    background-image: url("Piper5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*This put my image in the middle like the other images*/
+#KIOF3{
+    background-image: url("KIOF3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px ;
+    border: solid 10px #896fbc;
+}
+/*This is just putting a border around my images on the 'information' page*/
+.KaiInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*This is putting a border around my images on the 'information' page*/
+.JBInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*This is just making it the same size and putting a border around my images on the 'information' page*/
+.HInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*This is just putting a border around my images on the 'information' page*/
+.SInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*This is just making it the same size and putting a border around my images on the 'information' page*/
+.VInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*Making it the same size as other images and putting border aournt the image*/
+.JInfo{
+    width:15%;
+    border: solid 10px #896fbc;
+}
+/*This is just making it the same size and putting a border around my images on the 'information' page*/
+.PInfo{
+    width:16%;
+    border: solid 10px #896fbc;
+}
+/*This is just putting a border around my images on the 'information' page*/
+.KIOF2{
+    height: 25%;
+    width: 25%;
+    border: solid 10px #896fbc;
+}
